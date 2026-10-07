@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Community | Community Store</title>
+  <meta name="theme-color" content="#176b5a">
+  <meta name="description" content="The Community Store bulletin board: events, notices, services and lost and found.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="community">
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">CS</span><span>Community Store</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mainNav">☰</button>
+    <nav class="nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="marketplace.html">Marketplace</a>
+      <a href="sell.html">Sell</a>
+      <a href="how-it-works.html">How it works</a>
+      <a class="active" aria-current="page" href="community.html">Community</a>
+      <a href="about.html">About</a>
+      <a class="cart-link" href="cart.html">Cart<span class="cart-count" id="cartCount" hidden>0</span></a>
+      <a class="nav-login" id="navLogin" href="login.html">Login</a>
+      <a class="nav-register" id="navRegister" href="register.html">Create account</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="page-hero"><div class="container"><div class="crumbs"><a href="index.html">Home</a> / Community</div><h1>Community board</h1><p>Share events, notices, services and lost property. Posts you add are stored in the Community Store database.</p></div></section>
+<section class="section "><div class="container"><div class="two-col wide-left"><div><div class="chips" id="boardChips">
+<button class="chip on" data-type="All">All</button><button class="chip" data-type="Events">Events</button><button class="chip" data-type="Notices">Notices</button><button class="chip" data-type="Services">Services</button><button class="chip" data-type="Lost and found">Lost and found</button></div>
+<div class="board" id="boardGrid"></div></div>
+<aside><form class="hero-card form-card" id="postForm">
+<h3 style="margin-bottom:12px">Post to the board</h3>
+<label class="field">Type<select id="pType"><option>Events</option><option>Notices</option><option>Services</option><option>Lost and found</option></select></label>
+<label class="field">Title<input id="pTitle" maxlength="70" required></label>
+<label class="field">Message<textarea id="pBody" rows="3" maxlength="200" required></textarea></label>
+<button class="btn btn-primary" style="width:100%">Post</button><p class="msg" id="postMsg" role="status"></p></form>
+<div class="info-card" style="margin-top:16px"><h3>Community guidelines</h3><ul><li>Be respectful and honest.</li><li>No spam, scams or illegal items.</li><li>Do not share other people's personal details.</li><li>Posts that break the rules are removed.</li></ul></div></aside></div></div></section>
+<section class="section section-soft"><div class="container"><div class="section-heading"><div><span class="eyebrow">COMING UP</span><h2>Sample campus events</h2></div></div><div class="cards-3">
+<article class="info-card"><div class="ico">📚</div><h3>Textbook swap</h3><p>Bring books you have finished with and take what you need. Sample event for the demo.</p></article>
+<article class="info-card"><div class="ico">🎤</div><h3>Entrepreneur showcase</h3><p>Student businesses present products to the campus community. Sample event for the demo.</p></article>
+<article class="info-card"><div class="ico">🧹</div><h3>Residence clear-out day</h3><p>Pass on furniture and household items before the break. Sample event for the demo.</p></article>
+</div></div></section>
+
+</main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><a class="brand" href="index.html"><span class="brand-mark">CS</span><span>Community Store</span></a>
+      <p>A mobile-first marketplace for students, faculty, local vendors and residents. Built as the Project Management 3 group project at CPUT.</p></div>
+    <div><strong>Marketplace</strong><a href="marketplace.html">Browse listings</a><a href="categories.html">Categories</a><a href="sell.html">Sell an item</a><a href="cart.html">Your cart</a></div>
+    <div><strong>Community</strong><a href="community.html">Bulletin board</a><a href="how-it-works.html">How it works</a><a href="about.html">About the project</a></div>
+    <div><strong>Account</strong><a href="login.html">Login</a><a href="register.html">Create account</a></div>
+  </div>
+  <div class="container footer-bottom">© 2026 Community Store. Academic project. Listings, posts and events shown are sample content.</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase-config.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

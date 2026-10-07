@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>About | Community Store</title>
+  <meta name="theme-color" content="#176b5a">
+  <meta name="description" content="About the Community Store project, team, objectives and roadmap.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="about">
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">CS</span><span>Community Store</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mainNav">☰</button>
+    <nav class="nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="marketplace.html">Marketplace</a>
+      <a href="sell.html">Sell</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="community.html">Community</a>
+      <a class="active" aria-current="page" href="about.html">About</a>
+      <a class="cart-link" href="cart.html">Cart<span class="cart-count" id="cartCount" hidden>0</span></a>
+      <a class="nav-login" id="navLogin" href="login.html">Login</a>
+      <a class="nav-register" id="navRegister" href="register.html">Create account</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="page-hero"><div class="container"><div class="crumbs"><a href="index.html">Home</a> / About</div><h1>About Community Store</h1><p>Who we are, why we built it and where it is going.</p></div></section>
+<section class="section "><div class="container"><div class="two-col wide-left"><div><span class="eyebrow">THE PROJECT</span><h2 style="font-size:2rem;margin-bottom:12px">A safer, simpler campus marketplace</h2>
+<p class="lead">Students, staff, vendors and residents often trade through informal social media groups with no identity checks and no structured payments. Community Store brings them onto one platform with verified accounts, searchable listings, a cart and checkout, ratings and a community board.</p>
+<p class="lead">The project was built by a team of five students for Project Management 3 at the Cape Peninsula University of Technology, using Agile (Scrum) with a R0 budget.</p></div>
+<aside class="info-card"><h3>Project objectives</h3><ul><li>Build a working marketplace prototype.</li><li>Verify student and vendor accounts.</li><li>Deliver listings, search, cart and checkout.</li><li>Test with real users and aim for a 75% usability score.</li></ul></aside></div></div></section>
+<section class="section section-soft"><div class="container"><div class="section-heading"><div><span class="eyebrow">THE TEAM</span><h2>Who built it</h2></div></div><div class="cards-3">
+<article class="info-card"><div class="ico">📋</div><h3>Tumelo Masilela</h3><p>Project Manager and Scrum Master</p></article>
+<article class="info-card"><div class="ico">⚙️</div><h3>Siphesihle Mkiva</h3><p>Backend Developer</p></article>
+<article class="info-card"><div class="ico">🎨</div><h3>Jabu Mnguni</h3><p>Frontend Developer</p></article>
+<article class="info-card"><div class="ico">🧪</div><h3>Pule Dzavana</h3><p>QA Engineer and Business Analyst</p></article>
+<article class="info-card"><div class="ico">🔐</div><h3>Tiisetso Tukane</h3><p>Security and Community Liaison</p></article>
+</div></div></section>
+<section class="section "><div class="container"><div class="section-heading"><div><span class="eyebrow">ROADMAP</span><h2>What is built and what comes next</h2></div></div><div class="cards-2">
+<div class="info-card"><h3>Built in this version</h3><ul><li>Separate pages for every section</li><li>Marketplace search, filters and sorting</li><li>Cart and demo checkout</li><li>Seller listings</li><li>Community bulletin board</li><li>Registration rules for university emails</li></ul></div>
+<div class="info-card"><h3>Planned next</h3><ul><li>Connect Supabase authentication and database</li><li>Roles and admin moderation</li><li>Real vendor approval workflow</li><li>Reviews stored per seller</li><li>Payment gateway sandbox</li><li>Testing and deployment</li></ul></div></div></div></section>
+<section class="section "><div class="container"><div class="community-card"><div><h2>Questions or feedback?</h2><p>Contact details will be added when the platform launches. For now, share ideas on the community board.</p></div><a class="btn btn-primary" href="community.html">Go to the board</a></div></div></section>
+
+</main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><a class="brand" href="index.html"><span class="brand-mark">CS</span><span>Community Store</span></a>
+      <p>A mobile-first marketplace for students, faculty, local vendors and residents. Built as the Project Management 3 group project at CPUT.</p></div>
+    <div><strong>Marketplace</strong><a href="marketplace.html">Browse listings</a><a href="categories.html">Categories</a><a href="sell.html">Sell an item</a><a href="cart.html">Your cart</a></div>
+    <div><strong>Community</strong><a href="community.html">Bulletin board</a><a href="how-it-works.html">How it works</a><a href="about.html">About the project</a></div>
+    <div><strong>Account</strong><a href="login.html">Login</a><a href="register.html">Create account</a></div>
+  </div>
+  <div class="container footer-bottom">© 2026 Community Store. Academic project. Listings, posts and events shown are sample content.</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase-config.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

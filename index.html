@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Campus Marketplace | Community Store</title>
+  <meta name="theme-color" content="#176b5a">
+  <meta name="description" content="Community Store - a mobile-first campus marketplace for students, staff, vendors and residents.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">CS</span><span>Community Store</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mainNav">☰</button>
+    <nav class="nav" id="mainNav">
+      <a class="active" aria-current="page" href="index.html">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="marketplace.html">Marketplace</a>
+      <a href="sell.html">Sell</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="community.html">Community</a>
+      <a href="about.html">About</a>
+      <a class="cart-link" href="cart.html">Cart<span class="cart-count" id="cartCount" hidden>0</span></a>
+      <a class="nav-login" id="navLogin" href="login.html">Login</a>
+      <a class="nav-register" id="navRegister" href="register.html">Create account</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">CAMPUS MARKETPLACE</span>
+      <h1>Buy, sell and connect with your community.</h1>
+      <p>A simple marketplace for students, faculty, local vendors and residents to discover useful products and services in one trusted place.</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="marketplace.html">Browse marketplace</a><a class="btn btn-secondary" href="sell.html">Start selling</a></div>
+      <div class="trust-row"><span>✓ Verified accounts</span><span>✓ Secure checkout</span><span>✓ Community reviews</span></div>
+    </div>
+    <div class="hero-card">
+      <form class="search-box" id="heroSearchForm"><span>⌕</span><input id="heroSearch" type="search" placeholder="What are you looking for?" aria-label="Search listings"><button type="submit">Search</button></form>
+      <div class="hero-preview"><div class="preview-label">Popular today</div>
+        <div class="mini-product"><div class="product-placeholder">💻</div><div><strong>Student Laptop</strong><small>Good condition</small></div><b>R4,500</b></div>
+        <div class="mini-product"><div class="product-placeholder">📚</div><div><strong>Networking Textbook</strong><small>Study materials</small></div><b>R350</b></div>
+        <div class="mini-product"><div class="product-placeholder">🏠</div><div><strong>Study Desk</strong><small>Used - good</small></div><b>R700</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section "><div class="container"><div class="section-heading"><div><span class="eyebrow">WHO IT IS FOR</span><h2>One marketplace for the whole campus community</h2></div></div><div class="cards-4">
+<article class="info-card"><div class="ico">🎓</div><h3>Students</h3><p>Sell textbooks you no longer need, find affordable devices and offer your skills as tutoring or design services.</p></article>
+<article class="info-card"><div class="ico">🧑‍🏫</div><h3>Faculty and staff</h3><p>Pass on useful equipment, share announcements and support student businesses.</p></article>
+<article class="info-card"><div class="ico">🏪</div><h3>Local vendors</h3><p>Reach hungry, busy students with food, print, repairs and more, once an admin has verified your business.</p></article>
+<article class="info-card"><div class="ico">🏘️</div><h3>Residents</h3><p>Buy and sell with people around the campus in a safer space than anonymous social media groups.</p></article>
+</div></div></section>
+
+<section class="section section-soft"><div class="container"><div class="section-heading"><div><span class="eyebrow">EXPLORE</span><h2>Shop by category</h2></div><a href="categories.html">All categories →</a></div><div class="category-grid cat-six">
+<a class="category-card" href="marketplace.html?category=Electronics"><span>💻</span><strong>Electronics</strong><small>Devices & accessories</small></a>
+<a class="category-card" href="marketplace.html?category=Books"><span>📚</span><strong>Books</strong><small>Textbooks & study material</small></a>
+<a class="category-card" href="marketplace.html?category=Fashion"><span>👕</span><strong>Fashion</strong><small>Clothing & accessories</small></a>
+<a class="category-card" href="marketplace.html?category=Home"><span>🏠</span><strong>Home</strong><small>Furniture & essentials</small></a>
+<a class="category-card" href="marketplace.html?category=Services"><span>🛠️</span><strong>Services</strong><small>Local skills & services</small></a>
+<a class="category-card" href="marketplace.html?category=Food"><span>🍱</span><strong>Food</strong><small>Meals & snacks</small></a>
+</div></div></section>
+
+<section class="section "><div class="container"><div class="section-heading"><div><span class="eyebrow">MARKETPLACE</span><h2>Featured listings</h2></div><a href="marketplace.html">View all listings →</a></div><div class="product-grid" id="featuredGrid"></div></div></section>
+
+<section class="section section-soft"><div class="container"><div class="section-heading"><div><span class="eyebrow">SIMPLE PROCESS</span><h2>How Community Store works</h2></div><a href="how-it-works.html">Learn more →</a></div><div class="steps-grid">
+<article><span>01</span><h3>Create an account</h3><p>Register as a student, faculty member, vendor or resident. Students and faculty use their university email.</p></article>
+<article><span>02</span><h3>Find or list products</h3><p>Search listings, filter by category and condition, or add your own with a clear price and description.</p></article>
+<article><span>03</span><h3>Connect safely</h3><p>Check seller reviews, use your cart and checkout, and rate the seller afterwards to help the next buyer.</p></article>
+</div></div></section>
+
+<section class="section "><div class="container"><div class="section-heading"><div><span class="eyebrow">TRUST AND SAFETY</span><h2>Built so you know who you are dealing with</h2></div></div><div class="cards-4">
+<article class="info-card"><div class="ico">✅</div><h3>Verified accounts</h3><p>University email checks for students and faculty, and document checks for vendors.</p></article>
+<article class="info-card"><div class="ico">⭐</div><h3>Ratings and reviews</h3><p>Buyers rate sellers after a purchase, so good sellers stand out.</p></article>
+<article class="info-card"><div class="ico">🔒</div><h3>Protected payments</h3><p>Checkout is designed for secure payment gateways, with an extra check on high-value orders.</p></article>
+<article class="info-card"><div class="ico">🛡️</div><h3>Privacy first</h3><p>Built with POPIA in mind: clear consent, and your data is only used to run the marketplace.</p></article>
+</div></div></section>
+
+<section class="section section-soft"><div class="container"><div class="section-heading"><div><span class="eyebrow">COMMUNITY</span><h2>Latest from the bulletin board</h2></div><a href="community.html">Open the board →</a></div><div class="cards-3" id="homePosts"></div></div></section>
+
+<section class="section community-section"><div class="container community-card">
+<div><span class="eyebrow">COMMUNITY</span><h2>More than a marketplace.</h2><p>Use the community bulletin board to share useful announcements, opportunities and local information.</p></div>
+<a class="btn btn-primary" href="register.html">Join the community</a></div></section>
+</main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><a class="brand" href="index.html"><span class="brand-mark">CS</span><span>Community Store</span></a>
+      <p>A mobile-first marketplace for students, faculty, local vendors and residents. Built as the Project Management 3 group project at CPUT.</p></div>
+    <div><strong>Marketplace</strong><a href="marketplace.html">Browse listings</a><a href="categories.html">Categories</a><a href="sell.html">Sell an item</a><a href="cart.html">Your cart</a></div>
+    <div><strong>Community</strong><a href="community.html">Bulletin board</a><a href="how-it-works.html">How it works</a><a href="about.html">About the project</a></div>
+    <div><strong>Account</strong><a href="login.html">Login</a><a href="register.html">Create account</a></div>
+  </div>
+  <div class="container footer-bottom">© 2026 Community Store. Academic project. Listings, posts and events shown are sample content.</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase-config.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

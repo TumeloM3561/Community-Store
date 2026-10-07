@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Categories | Community Store</title>
+  <meta name="theme-color" content="#176b5a">
+  <meta name="description" content="Browse Community Store by category: electronics, books, fashion, home, services and food.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="categories">
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">CS</span><span>Community Store</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mainNav">☰</button>
+    <nav class="nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a class="active" aria-current="page" href="categories.html">Categories</a>
+      <a href="marketplace.html">Marketplace</a>
+      <a href="sell.html">Sell</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="community.html">Community</a>
+      <a href="about.html">About</a>
+      <a class="cart-link" href="cart.html">Cart<span class="cart-count" id="cartCount" hidden>0</span></a>
+      <a class="nav-login" id="navLogin" href="login.html">Login</a>
+      <a class="nav-register" id="navRegister" href="register.html">Create account</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="page-hero"><div class="container"><div class="crumbs"><a href="index.html">Home</a> / Categories</div><h1>Browse by category</h1><p>Six categories keep things easy to find. Pick one to see only the listings in it.</p></div></section>
+<section class="section "><div class="container"><div class="cards-3">
+<article class="info-card cat-big"><div class="ico">💻</div><h3>Electronics</h3><p>Laptops, phones, calculators, chargers and other gadgets for study and daily life.</p><p class="popular"><strong>Popular:</strong> laptops, calculators, accessories</p><p class="count"><span class="cat-count" data-cat="Electronics">0</span> listings</p><a class="btn btn-secondary btn-sm" href="marketplace.html?category=Electronics">Browse Electronics</a></article>
+<article class="info-card cat-big"><div class="ico">📚</div><h3>Books</h3><p>Textbooks, study guides and bundles from previous years, often at a fraction of the new price.</p><p class="popular"><strong>Popular:</strong> textbooks, programming books, notes</p><p class="count"><span class="cat-count" data-cat="Books">0</span> listings</p><a class="btn btn-secondary btn-sm" href="marketplace.html?category=Books">Browse Books</a></article>
+<article class="info-card cat-big"><div class="ico">👕</div><h3>Fashion</h3><p>Clothing, campus wear and accessories, from society hoodies to everyday basics.</p><p class="popular"><strong>Popular:</strong> hoodies, jackets, bags</p><p class="count"><span class="cat-count" data-cat="Fashion">0</span> listings</p><a class="btn btn-secondary btn-sm" href="marketplace.html?category=Fashion">Browse Fashion</a></article>
+<article class="info-card cat-big"><div class="ico">🏠</div><h3>Home</h3><p>Furniture and essentials for residences and rooms: desks, lamps, kitchen items.</p><p class="popular"><strong>Popular:</strong> desks, lamps, bedding</p><p class="count"><span class="cat-count" data-cat="Home">0</span> listings</p><a class="btn btn-secondary btn-sm" href="marketplace.html?category=Home">Browse Home</a></article>
+<article class="info-card cat-big"><div class="ico">🛠️</div><h3>Services</h3><p>Skills offered by the community: tutoring, design, printing, repairs and more.</p><p class="popular"><strong>Popular:</strong> tutoring, design, printing</p><p class="count"><span class="cat-count" data-cat="Services">0</span> listings</p><a class="btn btn-secondary btn-sm" href="marketplace.html?category=Services">Browse Services</a></article>
+<article class="info-card cat-big"><div class="ico">🍱</div><h3>Food</h3><p>Meals, snacks and baked goods from student entrepreneurs and local vendors.</p><p class="popular"><strong>Popular:</strong> lunch boxes, baking, snacks</p><p class="count"><span class="cat-count" data-cat="Food">0</span> listings</p><a class="btn btn-secondary btn-sm" href="marketplace.html?category=Food">Browse Food</a></article>
+</div></div></section>
+<section class="section "><div class="container"><div class="community-card"><div><h2>Can't find what you need?</h2><p>Post a listing of your own or share a request on the community board. Someone nearby may have it.</p></div><div class="hero-actions"><a class="btn btn-primary" href="sell.html">Sell an item</a><a class="btn btn-secondary" href="community.html">Ask the community</a></div></div></div></section>
+
+</main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><a class="brand" href="index.html"><span class="brand-mark">CS</span><span>Community Store</span></a>
+      <p>A mobile-first marketplace for students, faculty, local vendors and residents. Built as the Project Management 3 group project at CPUT.</p></div>
+    <div><strong>Marketplace</strong><a href="marketplace.html">Browse listings</a><a href="categories.html">Categories</a><a href="sell.html">Sell an item</a><a href="cart.html">Your cart</a></div>
+    <div><strong>Community</strong><a href="community.html">Bulletin board</a><a href="how-it-works.html">How it works</a><a href="about.html">About the project</a></div>
+    <div><strong>Account</strong><a href="login.html">Login</a><a href="register.html">Create account</a></div>
+  </div>
+  <div class="container footer-bottom">© 2026 Community Store. Academic project. Listings, posts and events shown are sample content.</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase-config.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

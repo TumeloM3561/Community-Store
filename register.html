@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Create account | Community Store</title>
+  <meta name="theme-color" content="#176b5a">
+  <meta name="description"
+    content="Create your Community Store account as a student, faculty member, vendor or resident.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="register">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html"><span class="brand-mark">CS</span><span>Community Store</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mainNav">☰</button>
+      <nav class="nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="marketplace.html">Marketplace</a>
+        <a href="sell.html">Sell</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="community.html">Community</a>
+        <a href="about.html">About</a>
+        <a class="cart-link" href="cart.html">Cart<span class="cart-count" id="cartCount" hidden>0</span></a>
+        <a class="nav-login" id="navLogin" href="login.html">Login</a>
+        <a class="nav-register" id="navRegister" href="register.html">Create account</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="section">
+      <div class="container" style="max-width:600px">
+        <div class="hero-card form-card"><span class="eyebrow">JOIN THE MARKETPLACE</span>
+          <h1 style="font-size:2rem;margin-bottom:8px">Create your account</h1>
+          <p style="color:var(--muted);margin-bottom:24px">Choose your community role and create your profile.</p>
+          <form id="registerForm" onsubmit="registerUser(event)"><label class="field">Full name<input id="rName" required type="text"
+                placeholder="Your full name" autocomplete="name"></label>
+            <label class="field">Email<input id="rEmail" required type="email" placeholder="you@university.ac.za"
+                autocomplete="email"></label>
+            <label class="field">Account type<select id="rRole" required>
+                <option value="">Select a role</option>
+                <option>Student</option>
+                <option>Faculty</option>
+                <option>Vendor</option>
+                <option>Resident</option>
+              </select></label>
+            <p class="hint" id="roleHint">Students and faculty must use a university email ending in .ac.za.</p>
+            <label class="field">Password<input id="rPass" required minlength="8" type="password"
+                placeholder="At least 8 characters" autocomplete="new-password"></label>
+            <label class="check"><input type="checkbox" id="rConsent"> I consent to my personal information being
+              processed under POPIA.</label>
+            <button class="btn btn-primary" style="width:100%">Create account</button>
+          </form>
+          <p class="msg" id="registerMessage" role="status"></p>
+          <p style="margin-top:20px;text-align:center;color:var(--muted)">Already registered? <a href="login.html"
+              style="color:var(--brand);font-weight:700">Login</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><a class="brand" href="index.html"><span class="brand-mark">CS</span><span>Community Store</span></a>
+        <p>A mobile-first marketplace for students, faculty, local vendors and residents. Built as the Project
+          Management 3 group project at CPUT.</p>
+      </div>
+      <div><strong>Marketplace</strong><a href="marketplace.html">Browse listings</a><a
+          href="categories.html">Categories</a><a href="sell.html">Sell an item</a><a href="cart.html">Your cart</a>
+      </div>
+      <div><strong>Community</strong><a href="community.html">Bulletin board</a><a href="how-it-works.html">How it
+          works</a><a href="about.html">About the project</a></div>
+      <div><strong>Account</strong><a href="login.html">Login</a><a href="register.html">Create account</a></div>
+    </div>
+    <div class="container footer-bottom">© 2026 Community Store. Academic project. Listings, posts and events shown are
+      sample content.</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase-config.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+
+</html>
